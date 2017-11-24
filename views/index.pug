@@ -1,0 +1,12 @@
+html
+	head
+		title Form
+		style
+			include pug.css
+		body
+			include navbar.pug
+			h1 What is your favorite song:
+			form(class="forms" method="POST" action="/add")
+				input(type="text" placeholder="Artist" name="artist")
+				input(type="text" placeholder="title" name="title")
+				input(type="submit" value="send!")

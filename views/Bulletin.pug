@@ -1,0 +1,12 @@
+html
+	head
+		script(type="text/javascript" src="index.js")
+		script(src="https://code.jquery.com/jquery-3.2.1.js"
+				integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+				crossorigin="anonymous")
+		title Home
+	body
+		include navbar.pug
+		h1 BulletinBoard
+		- for (var i =0; i < songs.length; i++)
+			li #{songs[i].title} - #{songs[i].body}
